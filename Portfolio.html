@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моє портфоліо</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Моє портфоліо</h1>
+    </header>
+
+    <nav>
+        <ul id="nav">
+            <li><a href="#" class="nav-link" data-section="about">Про себе</a></li>
+            <li><a href="#" class="nav-link" data-section="works">Каталог робіт</a></li>
+            <li><a href="#" class="nav-link" data-section="reviews">Відгуки</a></li>
+            <li><a href="#" class="nav-link" data-section="contact">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <!-- Вміст розділу "Про себе" -->
+            <h2>Про себе</h2>
+    <img src="D:\Univer\2 semester\WEB\Portfolio_\Photos\me.jpg" alt="Мельниченко Катерина" class="profile-picture" id="myImg" onclick="openModal();">
+
+    <p>Привіт! Мене звуть Олександр. Я навчаюсь в Поліському національному університеті, де отримую цінний досвід та знання. Я зацікавлений у веб-розробці і маю глибокі знання в HTML, CSS, та JavaScript.</p>
+    <p>Я прагну вдосконалювати свої навички і завжди відкритий до нових викликів. Я старанно працюю над кожним проектом, щоб створити ефективні, естетично привабливі та користувачам зручні веб-сайти.</p>
+    <p>Завдяки моєму досвіду та наполегливості, я готовий виконувати навіть найскладніші завдання та досягати відмінних результатів.</p>
+        </section>
+
+         <section id="works" class="section">
+            <!-- Вміст розділу "Каталог робіт" -->
+            <h2>Каталог робіт</h2>
+    <ul class="work-list">
+        <li>
+            <h3>Сайт портфоліо</h3>
+            <a href="https://github.com/YekaMel/My_Site.git" class="project-link">Посилання GitHub</a>
+        </li>
+        <li>
+            <h3>Розробка мобільного застосунку стеження за витратами</h3>
+            <a href="https://github.com/SanyaPy/My_App.git" class="project-link">Посилання GitHub</a>
+        </li>
+        <li>
+            <h3>CS50: Вебпрограмування з Python та JavaScript</h3>
+            <p>Завершений сертифікат курсу "CS50: Вебпрограмування з Python та JavaScript".</p>
+            <img src="Photos\certificate_1.jpg" alt="Сертифікат CS50" class="certificate">
+        </li>
+        <li>
+            <h3>Основи програмування на Java</h3>
+            <p>Завершений сертифікат курсу "Основи програмування на Java".</p>
+            <img src="Photos\certificate_2.jpg" alt="Сертифікат Java" class="certificate">
+        </li>
+        <!-- Додайте інші роботи за аналогією -->
+    </ul>
+        </section>
+
+        <section id="reviews" class="section">
+            <!-- Вміст розділу "Відгуки" -->
+             <h2>Відгуки</h2>
+    <form id="review-form">
+        <input type="text" id="review-author" placeholder="Ваше ім'я" required>
+        <textarea id="review-content" placeholder="Ваш відгук" required></textarea>
+        <button type="submit">Надіслати відгук</button>
+    </form>
+    <div id="reviews-list"></div>
+        </section>
+
+        <section id="contact" class="section">
+    <h2>Контакти:</h2>
+    <div class="contact-info">
+        <div class="profile-picture">
+            <img src="D:\Univer\2 semester\WEB\Portfolio_\Photos\me.jpg" alt="Моє фото">
+        </div>
+        <div class="contact-details">
+            <p>Email: <a href="mailto:learncode.py@gmail.com">learncode.py@gmail.com</a></p>
+            <p>Телефон: <a href="tel:+380983769306">+380983769306</a></p>
+            <p>Адреса: <a href="https://www.google.com/maps/search/?api=1&query=вул.+Старий+Бульвар,+7,+Житомир,+Україна">вул. Старий Бульвар, 7, Житомир, Україна</a></p>
+            <br>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2023 Всі права захищені</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
